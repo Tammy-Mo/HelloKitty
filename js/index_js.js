@@ -62,17 +62,6 @@ $(window).scroll(function(event) {
 });
 /*---------------fix--------------------*/
 
-$('.small_title').click(function(event) {
-	$(this).parent().children('.small_main').slideToggle(50);
-	if($(this).children('span').html()=='-'){
-		$(this).css('border-bottom', '1px solid #000');
-		$(this).children('span').html("+");
-	}else{
-		$(this).children('span').html("-");
-		$(this).css('border', '0');
-	}
-});
-/*--------------下面菜单--------------*/
 
 $('.navbar-header .glyphicon-menu-hamburger').click(function(event) {
 	$('.head_in').animate({'left': '0px'}, 300)
